@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personnages — Grimoire du Royaume de Clover</title>
+  <meta name="description" content="Biographies détaillées des personnages de Black Clover : Asta, Yuno, Noelle, Yami, les compagnies de Chevaliers Royaux et leurs grimoires." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Marcellus&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>" />
+</head>
+<body>
+  <canvas id="magic-particles" aria-hidden="true"></canvas>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-clover">🍀</span>
+        <span class="brand-text">GRIMOIRE <em>de</em> CLOVER</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="personnages.html" class="active">Personnages</a>
+        <a href="royaumes.html">Royaumes &amp; Villages</a>
+        <a href="index.html#actualites">Actualités</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="hero-kicker">✦ Les Chevaliers Royaux ✦</p>
+      <h1 class="hero-title small">PERSONNAGES</h1>
+      <p class="hero-sub">Clique sur un personnage pour ouvrir sa fiche complète : histoire, grimoire, techniques, rang et anecdotes.</p>
+    </section>
+
+    <section class="section">
+      <div class="char-controls reveal">
+        <div class="search-box">
+          <input type="search" id="char-search" placeholder="🔍 Rechercher un personnage, une magie…" aria-label="Rechercher un personnage" />
+        </div>
+        <div class="squad-filter" id="squad-filter">
+          <button class="chip active" data-squad="all">Tous</button>
+          <button class="chip" data-squad="Taureau Noir">Taureau Noir 🐂</button>
+          <button class="chip" data-squad="Aigle Ailé">Aigle Ailé 🦅</button>
+          <button class="chip" data-squad="Aurore Dorée">Aurore Dorée 🌅</button>
+          <button class="chip" data-squad="Rose Bleue">Rose Bleue 🌹</button>
+          <button class="chip" data-squad="Corbeau Royal">Corbeau Royal 🐦‍⬛</button>
+          <button class="chip" data-squad="Hors Royaume">Hors Royaume 🌍</button>
+        </div>
+      </div>
+      <p class="result-count" id="result-count"></p>
+      <div class="char-grid" id="char-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>Aucun mage ne répond à cette recherche… 🍀</p>
+    </section>
+  </main>
+
+  <!-- ============ MODALE FICHE PERSONNAGE ============ -->
+  <div class="modal-overlay" id="char-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>🍀 Grimoire de Clover</strong> — Encyclopédie non officielle de fans, dédiée à <em>Black Clover</em> de Yūki Tabata.</p>
+      <p class="footer-links">
+        <a href="index.html">Accueil</a> · <a href="personnages.html">Personnages</a> · <a href="royaumes.html">Royaumes</a>
+      </p>
+      <p class="footer-copy">Black Clover © Yūki Tabata / Shueisha — Site de fan éducatif, sans but commercial.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
