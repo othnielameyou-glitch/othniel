@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grimoire du Royaume de Clover — Black Clover</title>
+  <meta name="description" content="Le site ultime de Black Clover : biographies détaillées des personnages, royaumes, villages et actualités du monde magique." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Marcellus&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>" />
+</head>
+<body>
+  <canvas id="magic-particles" aria-hidden="true"></canvas>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-clover">🍀</span>
+        <span class="brand-text">GRIMOIRE <em>de</em> CLOVER</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="personnages.html">Personnages</a>
+        <a href="royaumes.html">Royaumes &amp; Villages</a>
+        <a href="index.html#actualites">Actualités</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">✦ Le monde où la magie est tout ✦</p>
+        <h1 class="hero-title">ROYAUME <span>de</span> CLOVER</h1>
+        <p class="hero-sub">
+          L'encyclopédie vivante de <strong>Black Clover</strong> : plonge dans les secrets des Chevaliers Royaux,
+          des grimoires légendaires, des quatre grands royaumes et des villages perdus du monde magique.
+        </p>
+        <div class="hero-actions">
+          <a href="personnages.html" class="btn btn-primary">⚡ Voir les Personnages</a>
+          <a href="royaumes.html" class="btn btn-ghost">🗺️ Explorer les Royaumes</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat"><span data-count="4">0</span><small>Royaumes majeurs</small></div>
+          <div class="stat"><span data-count="9">0</span><small>Compagnies de Chevaliers</small></div>
+          <div class="stat"><span data-count="3">0</span><small>Feuilles du trèfle</small></div>
+          <div class="stat"><span data-count="1">0</span><small>Grimoire à 5 feuilles</small></div>
+        </div>
+      </div>
+      <div class="scroll-hint">▼</div>
+    </section>
+
+    <!-- ============ LORE ============ -->
+    <section class="section lore">
+      <h2 class="section-title reveal">Le Mythe du Trèfle</h2>
+      <p class="section-sub reveal">
+        Autrefois, un démon faillit détruire le monde. Un mage solitaire le vainquit et devint le
+        <strong>Premier Roi-Mage</strong>. Quatre trèfles furent forgés pour sceller l'ère de paix —
+        mais un cinquième trèfle, celui du <em>désespoir et de l'espoir mêlés</em>, existe encore…
+      </p>
+      <div class="lore-grid">
+        <article class="card reveal">
+          <div class="card-icon">🍀</div>
+          <h3>Trèfle à 3 feuilles</h3>
+          <p>Accordé aux mages ordinaires. Foi, espérance et amour : chaque feuille porte une vertu, et le grimoire grandit avec son porteur.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">👑</div>
+          <h3>Trèfle à 4 feuilles</h3>
+          <p>La chance des élus. Seuls les mages d'exception en reçoivent un — Yuno, héritier du vent, en est l'exemple parfait.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">😈</div>
+          <h3>Trèfle à 5 feuilles</h3>
+          <p>Un trèfle à 4 feuilles corrompu par le désespoir. Il abrite un démon. Celui d'Asta renferme <em>Li'l Devil</em>, maître de l'anti-magie.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ACTUALITES ============ -->
+    <section class="section news" id="actualites">
+      <h2 class="section-title reveal">Actualités du Monde Magique</h2>
+      <p class="section-sub reveal">Les dépêches du Corbeau Royal, directement depuis le château de Clover.</p>
+
+      <div class="news-filters reveal">
+        <button class="chip active" data-filter="all">Tout</button>
+        <button class="chip" data-filter="anime">Anime</button>
+        <button class="chip" data-filter="manga">Manga</button>
+        <button class="chip" data-filter="jeux">Jeux &amp; Produits</button>
+      </div>
+
+      <div class="news-grid" id="news-grid"></div>
+    </section>
+
+    <!-- ============ CITATION ============ -->
+    <section class="quote-banner">
+      <blockquote class="reveal">
+        «&nbsp;Dans ce monde, la magie est tout… mais je serai quand même le Roi-Mage&nbsp;!&nbsp;»
+        <cite>— Asta, Chevalier du Taureau Noir</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>🍀 Grimoire de Clover</strong> — Encyclopédie non officielle de fans, dédiée à <em>Black Clover</em> de Yūki Tabata.</p>
+      <p class="footer-links">
+        <a href="index.html">Accueil</a> · <a href="personnages.html">Personnages</a> · <a href="royaumes.html">Royaumes</a>
+      </p>
+      <p class="footer-copy">Black Clover © Yūki Tabata / Shueisha — Site de fan éducatif, sans but commercial.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

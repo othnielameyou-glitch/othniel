@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royaumes &amp; Villages — Grimoire du Royaume de Clover</title>
+  <meta name="description" content="Cartographie détaillée du monde de Black Clover : Royaume de Clover, de Spade, de Diamond, de Heart, la Forêt des Sorcières et les villages de Hage, Kikka et Raque." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Marcellus&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>" />
+</head>
+<body>
+  <canvas id="magic-particles" aria-hidden="true"></canvas>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-clover">🍀</span>
+        <span class="brand-text">GRIMOIRE <em>de</em> CLOVER</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="personnages.html">Personnages</a>
+        <a href="royaumes.html" class="active">Royaumes &amp; Villages</a>
+        <a href="index.html#actualites">Actualités</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="hero-kicker">✦ Cartographie du Monde Magique ✦</p>
+      <h1 class="hero-title small">ROYAUMES &amp; VILLAGES</h1>
+      <p class="hero-sub">Quatre grandes nations, une forêt interdite et des villages oubliés : explore chaque territoire, sa société, ses mages et ses secrets.</p>
+    </section>
+
+    <div class="realm-nav reveal" id="realm-nav"></div>
+    <div id="realms-container"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>🍀 Grimoire de Clover</strong> — Encyclopédie non officielle de fans, dédiée à <em>Black Clover</em> de Yūki Tabata.</p>
+      <p class="footer-links">
+        <a href="index.html">Accueil</a> · <a href="personnages.html">Personnages</a> · <a href="royaumes.html">Royaumes</a>
+      </p>
+      <p class="footer-copy">Black Clover © Yūki Tabata / Shueisha — Site de fan éducatif, sans but commercial.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
